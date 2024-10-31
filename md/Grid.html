@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* 二维布局 */
+      /* 可以同时处理列和行 */
+      .grid-box {
+        width: 50%;
+        height: 50%;
+        background-color: #f00;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+      }
+      .item {
+        background-color: #00f;
+        text-align: center;
+        line-height: 300px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 100px);
+        /* 上面代码表示每列宽度100px，
+        然后自动填充，
+        直到容器不能放置更多的列。 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-box">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>
