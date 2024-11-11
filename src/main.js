@@ -3,8 +3,9 @@ import App from './App.vue'
 import router from './router'
 
 // 引入样式
-import './styles/tailwind.css'
-import "./styles/index.css"
+import "./assets/css/tailwind.css"
+import './assets/css/index.css'
+
 // 引入组件库
 import DataVVue3 from "@kjgl77/datav-vue3";
 

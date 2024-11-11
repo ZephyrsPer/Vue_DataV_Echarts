@@ -1,11 +1,11 @@
 <template>
-  <div demo-bg>
-    <dv-border-box8 :reverse="true">
-      <div dv-bg>dv-border-box8</div>
-    </dv-border-box8>
+  <div>
+    <Title></Title>
+    <Main></Main>
   </div>
 </template>
 
 <script setup>
-import { BorderBox8 as DvBorderBox8 } from "@kjgl77/datav-vue3";
+import Title from "./modules/Title/index.vue";
+import Main from "./modules/Main/index.vue";
 </script>
