@@ -8,6 +8,8 @@
 
 <style scoped>
 #bg {
-  background-color: antiquewhite;
+  min-height: 100%;
+  background-color: rgb(51, 50, 50);
+  color: aliceblue;
 }
 </style>

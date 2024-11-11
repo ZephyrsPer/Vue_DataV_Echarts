@@ -1,12 +1,11 @@
 <template>
-  <div class="bg">2223</div>
+  <div demo-bg>
+    <dv-border-box8 :reverse="true">
+      <div dv-bg>dv-border-box8</div>
+    </dv-border-box8>
+  </div>
 </template>
 
-<script setup></script>
-
-<style scoped>
-.bg {
-  background-color: aquamarine;
-  width: 200px;
-}
-</style>
+<script setup>
+import { BorderBox8 as DvBorderBox8 } from "@kjgl77/datav-vue3";
+</script>
