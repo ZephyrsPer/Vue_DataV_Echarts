@@ -1,8 +1,13 @@
 <script setup></script>
 
 <template>
-  <router-view></router-view>
+  <div id="bg">
+    <router-view></router-view>
+  </div>
 </template>
 
 <style scoped>
+#bg {
+  background-color: antiquewhite;
+}
 </style>

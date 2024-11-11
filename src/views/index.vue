@@ -1,7 +1,12 @@
 <template>
-  <div>22</div>
+  <div class="bg">2223</div>
 </template>
 
 <script setup></script>
 
-<style scoped></style>
+<style scoped>
+.bg {
+  background-color: aquamarine;
+  width: 200px;
+}
+</style>
