@@ -24,5 +24,13 @@ import Fourth from "./modules/Fourth/index.vue";
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 3fr 2fr;
+  width: 100%;
+  height: 100%;
+}
+.main div:nth-child(1) {
+  grid-column: 1/3;
+}
+.main div:nth-child(2) {
+  grid-column: 2/4;
 }
 </style>

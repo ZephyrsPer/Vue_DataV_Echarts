@@ -4,4 +4,8 @@
 
 <script setup></script>
 
-<style scoped></style>
+<style scoped>
+div {
+  background-color: rgb(101, 114, 114);
+}
+</style>
