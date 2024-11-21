@@ -6,6 +6,6 @@
 
 <style scoped>
 div {
-  background-color: rgb(76, 133, 65);
+  /* background-color: rgb(76, 133, 65); */
 }
 </style>
