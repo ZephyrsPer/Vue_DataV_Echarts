@@ -1,12 +1,16 @@
 <template>
-  <div>
+  <div style="height: 100%">
     <Title></Title>
     <!-- 通过网格布局 -->
     <div class="main">
-      <First></First>
-      <Second></Second>
-      <Third></Third>
-      <Fourth></Fourth>
+      <First class="top"></First>
+      <div class="bottom">
+        <Second class="bottom-left"></Second>
+        <div class="bottom-right">
+          <Third class="bottom-right-top"></Third>
+          <Fourth class="bottom-right-bottom"></Fourth>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -20,17 +24,40 @@ import Fourth from "./modules/Fourth/index.vue";
 </script>
 
 <style scoped>
+:deep(.header) {
+  /* background-color: #fafafa; */
+  color: rgb(248, 183, 97);
+  max-height: 20%;
+  height: 10%;
+}
 .main {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 3fr 2fr;
-  width: 100%;
+  max-height: 90%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  /* height: 100%; */
 }
-.main div:nth-child(1) {
-  grid-column: 1/3;
+
+.main .top {
+  flex: 1;
 }
-.main div:nth-child(2) {
-  grid-column: 2/4;
+
+.main .bottom {
+  flex: 9;
+  display: flex;
+  width: 100%;
+}
+
+.main .bottom .bottom-left {
+  height: 100%;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+}
+.main .bottom .bottom-right {
+  display: flex;
+  flex-direction: column;
 }
 </style>
