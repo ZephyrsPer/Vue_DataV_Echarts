@@ -37,7 +37,6 @@ import Fourth from "./modules/Fourth/index.vue";
   flex-direction: column;
   width: 100%;
   flex: 1;
-  /* height: 100%; */
 }
 
 .main .top {
@@ -52,11 +51,13 @@ import Fourth from "./modules/Fourth/index.vue";
 
 .main .bottom .bottom-left {
   height: 100%;
-  background-color: aqua;
+  flex: 3;
+  /* background-color: aqua; */
   display: flex;
   flex-direction: column;
 }
 .main .bottom .bottom-right {
+  flex: 7;
   display: flex;
   flex-direction: column;
 }
